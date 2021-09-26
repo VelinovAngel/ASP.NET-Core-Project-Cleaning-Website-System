@@ -5,7 +5,6 @@
 @{
     var model = CompanyService.GetCompanyInfoViewModel<CompanyInfoViewModel>();
     var email = model.Email;
-    var addressLink = $"http://maps.google.com/?q= {model.Address}";
     var address = model.Address;
     var phone = model.PhoneNumber;
 }
@@ -39,9 +38,9 @@
                 <div class="row justify-content-between">
                     <div class="col-12 col-md d-flex align-items-center">
                         <p class="mb-0 phone">
-                            <i class="fas fa-phone-volume"> <span class="mailus">Phone no:</span> <a href="tel://@phone">@phone</a></i>
-                            <i class="fas fa-at"></i> <span class="mailus">email us:</span><a href="mailto:master.servicesmd@gmail.com">@email</a>
-                            <i class="fas fa-envelope-open-text"></i> <span class="mailus">address us:</span> <a href="@addressLink">@address</a>
+                            <i class="fas fa-phone-volume"> <span class="mailus">Phone no:</span> <a href="#">+@phone</a></i>
+                            <i class="fas fa-at"></i> <span class="mailus">email us:</span> <a href="#">@email</a>
+                            <i class="fas fa-envelope-open-text"></i> <span class="mailus">address us:</span> <a href="#">@address</a>
                         </p>
                     </div>
                     <div class="col-12 col-md d-flex justify-content-md-end">
